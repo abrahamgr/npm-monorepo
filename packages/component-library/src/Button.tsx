@@ -8,8 +8,9 @@ export const Button: React.FC<{ children: React.ReactNode }> = ({
       style={{
         padding: '0.5rem 1rem',
         backgroundColor: '#007bff',
-        // color: "#fff"
-        color: 'red',
+        color: '#fff',
+        // color: 'red',
+        // color: 'black',
       }}
     >
       {children}

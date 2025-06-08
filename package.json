@@ -2,8 +2,12 @@
   "name": "npm-monorepo",
   "private": true,
   "workspaces": ["packages/*", "apps/*"],
+  "packageManager": "^npm@10.9.2",
   "scripts": {
-    "dev": "npm run build:watch -w @app/component-library & npm run build:watch -w @app/utilities & npm run dev -w sandbox",
+    "dev": "turbo watch dev",
+    "dev2": "npm run build:watch -w @app/component-library & npm run build:watch -w @app/utilities & npm run dev -w sandbox",
+    "build": "turbo run build",
+    "build:clear": "turbo run build:clear",
     "lint": "npx @biomejs/biome check",
     "lint:fix": "npx @biomejs/biome check --write --unsafe",
     "prepare": "lefthook install || true"
@@ -12,6 +16,7 @@
     "@biomejs/biome": "^1.9.4",
     "lefthook": "^1.11.13",
     "prettier": "^3.5.3",
+    "turbo": "^2.5.4",
     "typescript": "^5.0.0"
   }
 }
