@@ -1,5 +1,5 @@
 import { Button } from '@app/component-library'
-import { useRandomNumber } from '@app/component-library'
+import { useRandomNumber } from '@app/utilities'
 
 function App() {
   const randomNumber = useRandomNumber(1, 100)

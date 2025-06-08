@@ -1,2 +1,2 @@
 export { Button } from './Button'
-export { useRandomNumber } from './useRandomNumber'
+export { useRandomNumber } from '../../utilities/src/useRandomNumber'

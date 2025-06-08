@@ -3,7 +3,7 @@
   "private": true,
   "workspaces": ["packages/*", "apps/*"],
   "scripts": {
-    "dev": "npm run build:watch -w @app/component-library & npm run dev -w sandbox",
+    "dev": "npm run build:watch -w @app/component-library & npm run build:watch -w @app/utilities & npm run dev -w sandbox",
     "lint": "npx @biomejs/biome check",
     "lint:fix": "npx @biomejs/biome check --write --unsafe",
     "prepare": "lefthook install || true"
