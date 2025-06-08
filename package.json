@@ -1,0 +1,14 @@
+{
+  "name": "npm-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run build:watch -w @app/component-library & npm run dev -w sandbox"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
