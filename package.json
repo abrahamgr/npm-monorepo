@@ -1,14 +1,17 @@
 {
   "name": "npm-monorepo",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ],
+  "workspaces": ["packages/*", "apps/*"],
   "scripts": {
-    "dev": "npm run build:watch -w @app/component-library & npm run dev -w sandbox"
+    "dev": "npm run build:watch -w @app/component-library & npm run dev -w sandbox",
+    "lint": "npx @biomejs/biome check",
+    "lint:fix": "npx @biomejs/biome check --write --unsafe",
+    "prepare": "lefthook install || true"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "lefthook": "^1.11.13",
+    "prettier": "^3.5.3",
     "typescript": "^5.0.0"
   }
 }

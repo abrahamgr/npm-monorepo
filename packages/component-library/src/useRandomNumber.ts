@@ -1,6 +1,6 @@
 export function useRandomNumber(min: number, max: number): number {
   if (min >= max) {
-    throw new Error("Min must be less than Max");
+    throw new Error('Min must be less than Max')
   }
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1)) + min
 }
