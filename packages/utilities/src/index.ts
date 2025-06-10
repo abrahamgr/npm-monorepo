@@ -1,1 +1,1 @@
-export { useRandomNumber } from './useRandomNumber'
+export { useRandomNumber, useRandomNumberInRange } from './useRandomNumber'

@@ -4,3 +4,11 @@ export function useRandomNumber(min: number, max: number): number {
   }
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
+
+export function useRandomNumberInRange(range: [number, number]): number {
+  const [min, max] = range
+  if (min >= max) {
+    throw new Error('Min must be less than Max')
+  }
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
