@@ -1,5 +1,11 @@
 # @app/utilities
 
+## 1.1.2
+
+### Patch Changes
+
+- e5df627: more docs
+
 ## 1.1.1
 
 ### Patch Changes
