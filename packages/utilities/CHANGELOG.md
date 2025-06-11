@@ -1,5 +1,11 @@
 # @app/utilities
 
+## 1.1.1
+
+### Patch Changes
+
+- 3417fd8: sumary for docs
+
 ## 1.1.0
 
 ### Minor Changes
