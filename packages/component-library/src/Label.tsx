@@ -1,3 +1,6 @@
+/**
+ * Label component
+ */
 export function Label({
   children,
   ...props
