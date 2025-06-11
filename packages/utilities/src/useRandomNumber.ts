@@ -1,3 +1,9 @@
+/**
+ * Returns a random number between min and max (inclusive).
+ * @param min number
+ * @param max number
+ * @returns number
+ */
 export function useRandomNumber(min: number, max: number): number {
   if (min >= max) {
     throw new Error('Min must be less than Max')
