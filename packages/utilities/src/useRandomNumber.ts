@@ -11,6 +11,10 @@ export function useRandomNumber(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
+/**
+ * Returns a random number within a specified range.
+ * @returns
+ */
 export function useRandomNumberInRange(range: [number, number]): number {
   const [min, max] = range
   if (min >= max) {
